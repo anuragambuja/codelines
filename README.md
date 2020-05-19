@@ -21,6 +21,8 @@
 ## flatten-dist-json.py
 
 *Flatten single (or, multiple) JSON(s) located on hdfs/cloud bucket using pyspark and python*
++ Pass exclusionList to ignore all the keys not to be expanded/flattened. 
++ Use explode(instead of explode_outer) if you want to ignore records with null in the column. 
      
     $$ python flatten-dist-json.py
 
