@@ -11,7 +11,7 @@
 ## flatten-single-json.py
 
 
-*Flatten a JSON file located in GCP bucket or available locally *
+*Flatten a JSON file located in GCP bucket or available locally using python.*
 
     $$ python flatten-single-json.py
 
@@ -21,7 +21,7 @@
 
 ## flatten-dist-json.py
 
-*Flatten single (or, multiple) JSON(s) located on hdfs/cloud bucket
+*Flatten single (or, multiple) JSON(s) located on hdfs/cloud bucket using pyspark and python*
      
     $$ python flatten-dist-json.py
 
@@ -29,4 +29,4 @@
 
 
 
-***comment, if anything was useful. 
+***comment, if anything was useful.***
