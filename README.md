@@ -24,8 +24,9 @@
 + Pass exclusionList to ignore all the keys not to be expanded/flattened. 
 + Use explode(instead of explode_outer) if you want to ignore records with null in the column. 
      
-    $$ python flatten-dist-json.py
+      $$ python flatten-dist-json.py
+
+## 
 
 
-                                                                                                                                     
 ***let me know, if anything was useful.***
