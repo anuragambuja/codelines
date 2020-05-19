@@ -2,21 +2,29 @@
 
 ## delete-old-file.sh
 
+
 *A housekeeping script which can be used for files deletion (eg. implementation of GDPR ) older than specified day.*
 
     $$ delete-old-file.sh /path/to/files retention_days
 
 
-## flatten-local-json.py
+## flatten-single-json.py
 
-*FLatten a JSON file located locally (not in hdfs or cloud bucket)*
 
-    $$ python flatten-json.py
+*Flatten a JSON file located in GCP bucket or available locally *
 
-** this script is available on stackoverflow.
+    $$ python flatten-single-json.py
+
+** The function is available over stackoverflow. I modified it to meet my requirement. 
+
 
 
 ## flatten-dist-json.py
+
+*Flatten single (or, multiple) JSON(s) located on hdfs/cloud bucket
+     
+    $$ python flatten-dist-json.py
+
 
 
 
