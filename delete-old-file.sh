@@ -1,5 +1,8 @@
 #!/bin/bash -l
 
+#A housekeeping script which can be used for files deletion (eg. implementation of GDPR ) older than specified day.
+# $ delete-old-file.sh /path/to/files retention_days
+
 ARCHIVE_DIR=$(echo "$1" | sed 's#/*$##')
 OLDER_THAN=$(echo "$2" | tr -d '[:alpha:]')
 LOG=./retention.log
