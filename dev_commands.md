@@ -1,5 +1,5 @@
-***bash: check special characters introduced int the script***
+*bash: check special characters introduced int the script*
 
-$$ cat -vT filename
-
-$$ vi -b filename
+  `$$ cat -vT filename`
+  
+  `$$ vi -b filename`
