@@ -1,0 +1,3 @@
+# shell command to check for the special characters in the script
+cat -vT filename
+vi -b filename
