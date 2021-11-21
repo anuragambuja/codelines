@@ -26,11 +26,7 @@
      
       $$ python flatten-dist-json.py
 
-## :wave: 
-
-
-***let me know, if anything was useful.***
-
+## :wave: Commands
 
 *bash*
 > check special characters introduced int the script
@@ -47,3 +43,8 @@
     $$ kubectl get secret <secret> -o yaml --context <context> --namespace <namespace>
     $$ kubectl --context=<context> get pods -n <namespace>
     $$ kubectl exec -it <pod> --context=<context> -n <namespace> -c <container> -- sh
+    
+    
+## :wave: 
+
+***let me know, if anything was useful.***    
