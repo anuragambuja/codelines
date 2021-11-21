@@ -40,14 +40,10 @@
 
 > kubectl
 
-kubectl config use-context <context>
-kubectl --context=<context> get pods -n <namespace>
-kubectl get secret --context=<context> <secret> -o json
-kubectl config get-clusters 
-kubectl get secret <secret> -o yaml --context <context> --namespace <namespace>
-kubectl --context=<context> get pods -n <namespace>
-stop:0, start:no of current replicas 
-kubectl scale deployment  airflow --replicas=0 -n airflow
-
-# login to pod
-kubectl exec -it <pod> --context=<context> -n <namespace> -c <container> -- sh
+$$ kubectl config use-context <context>
+$$ kubectl --context=<context> get pods -n <namespace>
+$$ kubectl get secret --context=<context> <secret> -o json
+$$ kubectl config get-clusters 
+$$ kubectl get secret <secret> -o yaml --context <context> --namespace <namespace>
+$$ kubectl --context=<context> get pods -n <namespace>
+$$ kubectl exec -it <pod> --context=<context> -n <namespace> -c <container> -- sh
