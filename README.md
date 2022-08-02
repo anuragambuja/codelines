@@ -45,6 +45,9 @@
     $$ kubectl exec -it <pod> --context=<context> -n <namespace> -c <container> -- sh
     
     
-## :wave: 
+## :wave: Create a virtual environment for your work:
+    $$ sudo apt-get install -y python3-venv
+    $$ python3 -m venv myenv
+    $$ source myenv/bin/activate
 
 ***let me know, if anything was useful.***    
