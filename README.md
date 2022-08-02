@@ -44,7 +44,14 @@
     $$ kubectl --context=<context> get pods -n <namespace>
     $$ kubectl exec -it <pod> --context=<context> -n <namespace> -c <container> -- sh
     
-    
+> Terraform 
+
+    $$ terraform init
+    $$ terraform plan
+    $$ terraform apply
+    $$ terraform output
+    $$ terraform destroy
+
 ## :wave: Create a virtual environment for your work:
     $$ sudo apt-get install -y python3-venv
     $$ python3 -m venv myenv
