@@ -56,5 +56,13 @@
     $$ sudo apt-get install -y python3-venv
     $$ python3 -m venv myenv
     $$ source myenv/bin/activate
+    
+> Docker
+
+    $$ 
+    $$
+    $$
+    $$
+    
 
 ***let me know, if anything was useful.***    
