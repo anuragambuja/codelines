@@ -5,6 +5,8 @@ Set environment variable to point to your downloaded GCP keys:
    
    # Refresh token/session, and verify authentication
    gcloud auth application-default login
+   
+   OR, gcloud auth activate-service-account --key-file $GOOGLE_APPLICATION_CREDENTIALS
    ```
 
 
