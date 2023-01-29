@@ -1,4 +1,13 @@
 
+Set environment variable to point to your downloaded GCP keys:
+   ```shell
+   export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
+   
+   # Refresh token/session, and verify authentication
+   gcloud auth application-default login
+   ```
+
+
 > Get project id: `gcloud info --format='value(config.project)'`
 
 ### Dataflow
