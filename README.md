@@ -117,6 +117,67 @@
     $$
     $$
     $$
-    
+
+
+> ## Configure multiple github accounts in vscode in windows
+#### Step 1: Generate SSH Keys for Both Users
+```
+# For User 1
+ssh-keygen -t ed25519 -C "user1@example.com"
+# Save as: C:\Users\<yourname>\.ssh\id_ed25519_user1
+
+# For User 2
+ssh-keygen -t ed25519 -C "user2@example.com"
+# Save as: C:\Users\<yourname>\.ssh\id_ed25519_user2
+```
+#### Step 2: Add SSH Keys to GitHub Accounts
+```
+Copy the contents of each public key (e.g. id_ed25519_user1.pub, id_ed25519_user2.pub).
+Go to GitHub → Settings → SSH and GPG Keys → Add new key.
+```
+#### Step 3: Create config File for SSH
+Create or edit the file at C:\Users\<yourname>\.ssh\config:
+```
+# GitHub User 1
+Host github-user1
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_user1
+
+# GitHub User 2
+Host github-user2
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_user2
+```
+
+#### Step 4: Clone Repositories with Matching Hostnames
+When cloning repos for each user, use the custom SSH alias from your config:
+```
+# For User 1
+git clone git@github-user1:username1/repo.git
+
+# For User 2
+git clone git@github-user2:username2/repo.git
+```
+
+#### Step 5: Set Git Config per Project
+Within each cloned repository, set the corresponding Git identity:
+```
+cd repo-user1
+git config user.name "User One"
+git config user.email "user1@example.com"
+
+cd ../repo-user2
+git config user.name "User Two"
+git config user.email "user2@example.com"
+```
+
+#### Step 6: VS Code Integration
+In VS Code:
+- Open each repo in a separate workspace or window.
+- The Git extension will automatically pick up the local config (user.name/user.email) per repo.
+- You can confirm this by running Git: Show Git Output in the VS Code command palette.
+
 
 ***let me know, if anything was useful.***    
